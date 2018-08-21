@@ -510,6 +510,89 @@ Transform:
   m_Father: {fileID: 5738747}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1535289970
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2132288429}
+    m_Modifications:
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.41063988
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.0388756
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.154678
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.04606041
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.00061017263
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.000028134666
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9989385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 5.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf9b1846ea5ea0b4dbe8584821b93574, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1535289971 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4263415257205428, guid: bf9b1846ea5ea0b4dbe8584821b93574,
+    type: 2}
+  m_PrefabInternal: {fileID: 1535289970}
+--- !u!1 &1592594267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1039368081048970, guid: bf9b1846ea5ea0b4dbe8584821b93574,
+    type: 2}
+  m_PrefabInternal: {fileID: 1535289970}
+--- !u!114 &1592594268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592594267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5272c9cb083849a43a5c97685fe7e648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpeed: 20
+  ySpeed: 20
+  xRange: 8
+  yRange: 5
+  positionPitchFactor: -5
+  controlPitchFactor: -30
+  positionYawFactor: 5
+  controlYawFactor: -30
 --- !u!1 &1762456898
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,7 +696,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -637,10 +720,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2132288426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 196.7, y: 217.4, z: -352.508}
+  m_LocalRotation: {x: -0.05477373, y: -0.05776492, z: -0.003174104, w: 0.99682146}
+  m_LocalPosition: {x: 24.98, y: 83.48, z: -50.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1535289971}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -656,7 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 5738746}
-  lookAheadForTargetOffset: 5
+  lookAheadForTargetOffset: 1
   lookAheadForTargetFactor: 0.1
   lookAheadForSpeedOffset: 10
   lookAheadForSpeedFactor: 0.2
