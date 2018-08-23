@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
 
         float yaw = transform.localPosition.x * positionYawFactor;  
 
+
         float roll = xThrow * controlYawFactor;
                 
 
