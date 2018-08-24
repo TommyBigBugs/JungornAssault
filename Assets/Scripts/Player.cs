@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     void Start()
     {
 
-     }
+    }
 
     // Update is called once per frame
     void Update()
@@ -41,13 +41,24 @@ public class Player : MonoBehaviour
         float pitchDueToControl = yThrow * controlPitchFactor;
         float pitch = pitchDueToControl + pitchDueToPosition;
 
-        float yaw = transform.localPosition.x * positionYawFactor;  
+        float yaw = transform.localPosition.x * positionYawFactor;
 
 
         float roll = xThrow * controlYawFactor;
-                
+
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        print("collided with something");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("triggered something");
     }
 
     private void MoveVertical()
